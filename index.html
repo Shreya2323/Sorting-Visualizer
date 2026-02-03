@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sorting Visualizer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Sorting Visualizer (with Logs)</h1>
+
+<div class="controls">
+  <select id="sortType">
+    <option value="bubble">Bubble Sort</option>
+    <option value="selection">Selection Sort</option>
+  </select>
+
+  <label>
+    Speed:
+    <input type="range" id="speed" min="300" max="1200" value="800">
+  </label>
+
+  <button onclick="startSort()">Start</button>
+</div>
+
+<div id="main">
+
+  <div id="array-section">
+    <h3>Array</h3>
+    <div id="array-container"></div>
+
+    <h3 id="sorted-title" style="display:none;">Sorted Array</h3>
+    <div id="sorted-container"></div>
+  </div>
+
+  <div id="side-panel">
+    <h3>Sorting Code</h3>
+    <pre id="code-block"></pre>
+
+    <h3>Step Logs</h3>
+    <div id="log-box"></div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
